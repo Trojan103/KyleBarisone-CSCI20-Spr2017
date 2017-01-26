@@ -1,7 +1,7 @@
 /* 1) Create a program so that the computer picks a random number (x) ranging 
 from 0 to 20. 
 
-2) Make the computer desplay every number on the screen from 0 to 20 in 
+2) Make the computer display every number on the screen from 0 to 20 in 
 their own seperate box. 
 
 3) The numbers listed above must be in numerical order starting 
