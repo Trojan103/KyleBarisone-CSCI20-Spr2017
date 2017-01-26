@@ -7,8 +7,8 @@ their own seperate box.
 3) The numbers listed above must be in numerical order starting 
 from 0 and ending at 20. 
 
-4) If the user clicks on the correct number, Theuser wins and a message displays
-saying "congratulations!". 
+4) If the user clicks on the correct number, The user wins and a message displays
+saying "You Win!". 
 
 5) If the incorrect number is guessed by the user, a notification pops up saying 
 whether the number that was clicked is higher or lower than the number chosen
@@ -23,5 +23,5 @@ that are greater than the number chosen by the user are eliminated and no
 longer show up on the screen.
 
 8) Repeat steps 6 and 7 until the correct number is clicked on by the user,
-prompting the congratulations! screen to appear. */
+prompting the You Win! screen to appear. */
 
