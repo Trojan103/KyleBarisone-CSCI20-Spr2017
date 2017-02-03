@@ -17,7 +17,7 @@
     cout << "Enter the desired year to estimate the population";
     cin >> year;
     int prediction = currentPop +  ( year * addPopYear );
-    cout << "The population in " <<  year  << " will be ";
+    cout << "The population in " <<  year  << " years will be ";
     cout <<  prediction;
  
  }
