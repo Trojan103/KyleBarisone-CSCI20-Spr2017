@@ -5,40 +5,36 @@
 /* This program is used to emulate coin star. By taking all of the coins given to the machine from the user it taxes the total amount of money recieved
 by 10.9% and gives you an amount in dollars. That amount is how much the user will recieve after using the machine */
 
-// The tax rate
- double tax = .109;
-
-// The value of all the coins
- double penny = .01;
- double nickel = .05;
- double dime = .10;
- double quarter = .25;
- 
-// These variables are the total amount of each coin
+// The total amount of each coins that are inputed.
  int numQuarters = 0;
  int numDimes = 0;
  int numNickels = 0;
  int numPennies = 0;
  
- //This is where the user imputs the amount of coins that they have
- cout << "Enter the amount of each coin you have starting with quarters, then dimes, then nickels, then pennies.";
- cin >>numQuarters >> numDimes >> numNickels >> numPennies;
+ double moneyBack = 0;
+ double tax = .109;
  
- // These variable store the value of each coin presented to the machine.
- double valQuarters = numQuarters * quarter;
- double valDimes = numDimes * dime;
- double valNickels = numNickels * nickel;
- double valPennies = numPennies * penny;
+ //This variable computes the total amount of money given to the machine in cents
+ int moneyTotal = 0;
+
+//This line of code has you enter the amount of money you wish to convert.
+ cout << "Enter the amount of money you have. ";
+ cin >> moneyTotal;
  
- //This variable computes the total amount of money given to the machine
- double moneyTotal = valQuarters + valDimes + valNickels + valPennies;
+ //These lines of code tell you how many of each coin you are imputting based on the amount of money you put in
+ numQuarters = moneyTotal / 25;
+ numDimes = moneyTotal % (numQuarters * 25) / 10;
+ numNickels = moneyTotal % ((numQuarters * 25) + (numDimes * 10)) / 5;
+ numPennies = moneyTotal % ((numQuarters * 25) + (numDimes * 10) + (numNickels * 5)) / 1;
  
- //These two variables are used to calculate the tax and subtract it from the original total
- double moneyBack1 = moneyTotal * tax;
- double moneyBack2 = moneyTotal - moneyBack1;
+ //computes the amount of money back you earn.
+ moneyBack = moneyTotal - (moneyTotal * tax);
+ moneyBack = moneyBack/100;
  
  //The output statement that shows how much money the user will recieve from the machine
- cout << "You will recieve $" <<moneyBack2  << " after tax.";
+ cout << "You gave the machine " << moneyTotal << " in cash. ";
+ cout << "That equals " << numQuarters << " Quarters, " << numDimes << " Dimes, " << numNickels << " Nickels, and " << numPennies << " Pennies."; 
+ cout << "You will recieve $" << moneyBack  << " after tax.";
  
  
  }
