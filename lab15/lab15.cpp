@@ -57,7 +57,7 @@
      cout << "Enter an adverb!" << endl;
      getline (cin, adverb);
      
-     cout << "Enter a one word food!"; <<endl;
+     cout << "Enter a one word food!" << endl;
      getline(cin, food);
      
      cout << "Enter an adjective ending in -est" << endl;
