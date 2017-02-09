@@ -3,6 +3,8 @@
  using namespace std;
  
  int main(){
+     
+     //These are my strings for the madlib
      string noun;
      string number;
      string pluralNoun;
@@ -17,6 +19,8 @@
      string food;
      string adjEst;
      string show;
+     
+     // These lines of code have the user enter the appropriate types of words for the specific madlib
      
      cout << "Welcome to Mad libs! Enter the appropriate type of word upon being asked to see the mad lib at the end." << endl;
      
@@ -53,7 +57,7 @@
      cout << "Enter an adverb!" << endl;
      getline (cin, adverb);
      
-     cout << "Enter a one word food!";
+     cout << "Enter a one word food!"; <<endl;
      getline(cin, food);
      
      cout << "Enter an adjective ending in -est" << endl;
@@ -62,6 +66,8 @@
      cout << "Enter your favorite show and your madlib will be done!" << endl;
      getline(cin, show);
      
+     //This is what they outputted paragraph will be once everything has been entered in
+     
      cout << "The kids of the classroom (" << number << ") were busy getting ready for their Valentine's Day Party. " <<endl;
      cout << "They had spent hours decorating (" << noun << ") boxes with brightly colored (" << pluralNoun << ") and hearts made out of (" << pluralNoun1 << ")." <<endl;
      cout << "Their teacher (" << pastTenseVerb << ") (" << adjective << ") streamers throughout the classroom." << endl;
@@ -69,5 +75,5 @@
      cout << "Everyone was eager to pass out their valentines." << endl;
      cout << "They had worked hard to (" << verb << ") their name (" << adverb << ") on each envelope." << endl;
      cout << "There were cards with chocolate (" << pluralNoun2 << ") attached, cards sealed with scratch n' sniff stickers smelled like (" << food << ")," <<endl;
-     cout << "and cards with characters from (" << show << ") This was going to be the (" << adjEst << ") Valentine's Day ever!" << endl;
+     cout << "and cards with characters from (" << show << ".) This was going to be the (" << adjEst << ") Valentine's Day ever!" << endl;
  }
