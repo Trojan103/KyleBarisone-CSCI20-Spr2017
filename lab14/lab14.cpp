@@ -3,7 +3,7 @@
  
  int main(){
 /* This program is used to emulate coin star. By taking all of the coins given to the machine from the user it taxes the total amount of money recieved
-by 10.9% and gives you an amount in dollars. That amount is how much the user will recieve after using the machine */
+by 10.9% and gives you an amount in dollars. That amount is how much the user will recieve after using the machine. */
 
 // The total amount of each coins that are inputed.
  int numQuarters = 0;
