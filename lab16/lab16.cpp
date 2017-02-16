@@ -2,6 +2,9 @@
  #include <string>
  using namespace std;
  
+ /* This program allows the user to make monsters by imputting what name the monster has as well as all of the facial features based on lecture 1.6.
+ It will take those two monster imputted by the user and pair them with two monster (C and D) created by myself. */
+ 
  struct monster {
      string name;
      string head;
@@ -53,7 +56,7 @@
      monsterC.nose = "Wackus";
      monsterC.mouth = "Wackus";
      
-     //This block of code is for monster C
+     //This block of code is for monster D
      monsterD.name = "Wacky";
      monsterD.head = "Zombie";
      monsterD.eyes = "Wackus";
@@ -61,11 +64,12 @@
      monsterD.nose = "Wackus";
      monsterD.mouth = "Wackus";
      
+     //This code outputs the monsters as well as all of their traits
      cout << "All monsters are in order of Name, head, eyes, ears, nose, mouth" << endl;
-     cout << monsterA.name << ": " << monsterA.head << ", " << monsterA.eyes << ", " << monsterA.ears << ", " << monsterA.nose << "," <<monsterA.mouth <<"." << endl;
-     cout << monsterB.name << ": " << monsterB.head << ", " << monsterB.eyes << ", " << monsterB.ears << ", " << monsterB.nose << "," <<monsterB.mouth <<"." << endl;
-     cout << monsterC.name << ": " << monsterC.head << ", " << monsterC.eyes << ", " << monsterC.ears << ", " << monsterC.nose << "," <<monsterC.mouth <<"." << endl;
-     cout << monsterD.name << ": " << monsterD.head << ", " << monsterD.eyes << ", " << monsterD.ears << ", " << monsterD.nose << "," <<monsterD.mouth <<"." << endl;
+     cout << monsterA.name << ": " << monsterA.head << ", " << monsterA.eyes << ", " << monsterA.ears << ", " << monsterA.nose << ", " <<monsterA.mouth <<"." << endl;
+     cout << monsterB.name << ": " << monsterB.head << ", " << monsterB.eyes << ", " << monsterB.ears << ", " << monsterB.nose << ", " <<monsterB.mouth <<"." << endl;
+     cout << monsterC.name << ": " << monsterC.head << ", " << monsterC.eyes << ", " << monsterC.ears << ", " << monsterC.nose << ", " <<monsterC.mouth <<"." << endl;
+     cout << monsterD.name << ": " << monsterD.head << ", " << monsterD.eyes << ", " << monsterD.ears << ", " << monsterD.nose << ", " <<monsterD.mouth <<"." << endl;
      
  }
  
