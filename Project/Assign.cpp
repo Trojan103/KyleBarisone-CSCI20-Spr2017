@@ -1,8 +1,13 @@
 #include <iostream>
  #include <string>
  using namespace std;
- /* This program will calculate your weekly salary based on the numbers inputted into the code. It is calculated with a 17% tax as well as 130 
- dollars of healthcare each week.*/
+ 
+ /*
+ Kyle Barisone
+ Feb 18 2017
+ This program will calculate your weekly salary based on the numbers inputted into the code. It is calculated with a 17% tax as well as 130 
+ dollars of healthcare each week.
+ */
  
  //This struct holds the variables for salary, hours worked, and name
  struct paySlip {
@@ -35,7 +40,7 @@
     cin >> paySlip1.daysWorked;
     
     //These are my calculations for figuring out the total after tax
-    double weeklySalary = paySlip1.daysWorked * paySlip1.hoursWorked * paySlip1.salaryPerHour;
+    double weeklySalary = paySlip1.hoursWorked * paySlip1.salaryPerHour;
     double healthCareCharge = weeklySalary - 130;
     double netProfit = healthCareCharge - (healthCareCharge * .17);
     
