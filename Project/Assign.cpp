@@ -10,6 +10,7 @@
      double hoursWorked;
      string name;
      string last;
+     int daysWorked;
  };
  
  int main(){
@@ -30,8 +31,11 @@
     cout << "Now enter the amount of hours you have worked." << endl;
     cin >> paySlip1.hoursWorked;
     
+    cout << "Enter the amount of days you have worked." << endl;
+    cin >> paySlip1.daysWorked;
+    
     //These are my calculations for figuring out the total after tax
-    double weeklySalary = 7 * paySlip1.hoursWorked * paySlip1.salaryPerHour;
+    double weeklySalary = paySlip1.daysWorked * paySlip1.hoursWorked * paySlip1.salaryPerHour;
     double healthCareCharge = weeklySalary - 130;
     double netProfit = healthCareCharge - (healthCareCharge * .17);
     
@@ -41,5 +45,6 @@
     cout << "Hours Worked: " << paySlip1.hoursWorked << endl;
     cout << "gross pay: $" << weeklySalary << endl;
     cout << "Net Profit after Health Care Charges and 17% tax: $" << netProfit <<endl;
+    cout << "Days worked: " << paySlip1.daysWorked << endl;
     
  }
