@@ -45,6 +45,7 @@
     double netProfit = healthCareCharge - (healthCareCharge * .17);
     
     //This is where the code is outputted to the user with the final amounts.
+    cout << "Pay per hour: " << paySlip1.salaryPerHour << endl;
     cout << "Weekly wages for: " << endl;
     cout << "Name: " << paySlip1.last << ", " << paySlip1.name << endl;
     cout << "Hours Worked: " << paySlip1.hoursWorked << endl;
