@@ -3,6 +3,11 @@
  using namespace std;
  
  int main(){
+     /* 
+     Kyle Barisone
+     Febuary 13 2017
+     This program will take in words that the user comes up with and insert them into a madlib at the very end. 
+     */
      
      //These are my strings for the madlib
      string noun;

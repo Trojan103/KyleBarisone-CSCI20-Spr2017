@@ -2,8 +2,12 @@
  #include <string>
  using namespace std;
  
- /* This program allows the user to make monsters by imputting what name the monster has as well as all of the facial features based on lecture 1.6.
- It will take those two monster imputted by the user and pair them with two monster (C and D) created by myself. */
+ /* 
+ Kyle Barisone
+ Febuary 15 2017
+ This program allows the user to make monsters by imputting what name the monster has as well as all of the facial features based on lecture 1.6.
+ It will take those two monster imputted by the user and pair them with two monster (C and D) created by myself. 
+ */
  
  struct monster {
      string name;
