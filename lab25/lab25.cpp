@@ -18,7 +18,8 @@
     string newTitle;
     string newAuthor;
     int newYear;
-        
+    class TemperatureConverter{
+    
      public:    
         void setBookTitle(string title)
         {
@@ -46,6 +47,8 @@
         int getBookYear(){
             return newYear;
         }
+        
+        
  };
  
  int main() {
