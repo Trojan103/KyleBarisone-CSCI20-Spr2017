@@ -7,10 +7,11 @@ March 10 2017
 This program uses classes and constructors to convert a user entered amount of Feet, Yards and Miles into Inch values.
 */
 
-class DistanceConverter{                         // Distance converter class
+
+class DistanceConverter{     // Distance converter class converts all the distances entered in the main function into an inch value.
     public:
     
-    void setDistFromInches(double distInches){ // all of my accessor functions
+    void setDistFromInches(double distInches){    // all of my accessor functions
         Inches_ = distInches;
     }
     
