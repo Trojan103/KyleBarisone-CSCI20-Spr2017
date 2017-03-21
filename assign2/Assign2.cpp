@@ -60,6 +60,18 @@ class DistanceConverter{                         // Distance converter class
         Inches_ = distInches;
     }
     
+    // this is the print function for the program
+    
+    void print(){
+       
+        
+     cout << "This is equivalent to " << getInchesFromFeet() << " Inches" << endl;   
+        
+     cout << "This is equivalent to " << getInchesFromYards() << " Inches" << endl;   
+        
+     cout << "This is equivalent to " << getInchesFromMiles() << " Inches" << endl;
+    }
+    
     private:
     double Inches_;            // class variable
 };
@@ -72,20 +84,12 @@ int main(){
    
    DistanceConverter dist1;
    
-   // this is where the user enters the distances that they want converted to inches
+   // this is where the number in parenthesis is converted to its proper inch value.
    
-   cout << "please enter the amount of feet you want to convert to inches" << endl;
-   cin >> distFeet;
-   dist1.setDistToFeet(distFeet);
-   cout << "This is equivalent to " << dist1.getInchesFromFeet() << " Inches" << endl;
+   dist1.setDistToFeet(5);
    
-   cout << "please enter the amount of yards you want to convert to inches" << endl;
-   cin >> distYards;
-   dist1.setDistToYards(distYards); 
-   cout << "This is equivalent to " << dist1.getInchesFromYards() << " Inches" << endl;
-   
-   cout << "please enter the amount of Miles you want to convert to inches" << endl;
-   cin >> distMiles;
-   dist1.setDistToYards(distMiles); 
-   cout << "This is equivalent to " << dist1.getInchesFromMiles() << " Inches" << endl;
+   dist1.setDistToYards(5); 
+  
+   dist1.setDistToYards(5); 
+   dist1.print();
 }
