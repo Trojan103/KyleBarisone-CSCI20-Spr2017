@@ -4,7 +4,30 @@ using namespace std;
 #include<stdlib.h>
 #include<time.h>
 
-int main(){
+class scoreCalculator{ 
+    
+    public:
+    
+    void setScore(int sum){
+        Score_ = sum;
+        return;
+    }
+    
+    int getScore(){
+        int sum;
+        int number;
+        sum = sum + number;
+    }
+    
+    
+    private:
+    int Score_;
+    
+};
+
+    // initializing variable
+    
+    int main(){
     int number = 0;
     int turn = 1;
     int choice = 0;
@@ -12,16 +35,19 @@ int main(){
     int AIsum = 0;
     int sum = 0;
     
-    cin >> choice;
+cout << "Enter a 1" << endl;    
+cin >> choice;
     
 while(turn == 1 && choice == 1){
+
+cout << "Enter a 1 to roll or a 2 to pass" << endl;
 cin >> choice;
     
     if(turn == 1 && choice == 1){
     number = rand() % 6 + 1;
     sum = sum + number;
-    cout << number << ": This is what you got last roll" << endl;
-    cout << sum << ": This is the total score" << endl;
+    cout << "This is what you got last roll: " << number << endl;
+    cout << "This is the total score: " << sum << endl;
     
         if(number == 1){
             cout << "you got a 1 and reset your score.";
@@ -58,3 +84,4 @@ cin >> choice;
 
 
 }
+        
