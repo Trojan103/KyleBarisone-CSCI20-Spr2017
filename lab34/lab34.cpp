@@ -23,14 +23,14 @@ cin >> choice;
     cout << number << ": This is what you got last roll" << endl;
     cout << sum << ": This is the total score" << endl;
     
-        if(number == 1){
+    if(number == 1){
             cout << "you got a 1 and reset your score.";
             
-        }
+    }
     }
     
-    if (turn == 1 && choice == 2){
-    turn = turn + 1;
+if (turn == 1 && choice == 2){
+turn = turn + 1;
     
     }
 }
