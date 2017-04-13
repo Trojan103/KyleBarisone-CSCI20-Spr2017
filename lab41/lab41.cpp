@@ -7,16 +7,21 @@ you if the numbers are sorted in order and uses a print function to print it all
 #include <iostream>
 using namespace std;
 
+// Class for all of my array values
+
 class ArrayTools{
     
     public:
     
+// constructor
+
     ArrayTools(int array[]){
        for (int i = 0; i < 10; i++){
            myArray_[i] = array[i];
        }
     }
     
+// finds the minimum value of the values entered
     int Find_min(int num1, int num2){
       int minimum = myArray_[num1];
       for(int i = num1; i < num2; i++){
@@ -29,6 +34,7 @@ class ArrayTools{
         return minimum;
     }
     
+// finds the max value of the entered values
     int Find_max(int num1, int num2){
         int maximum = myArray_[num1];
       for(int i = num1; i < num2; i++){
@@ -41,6 +47,8 @@ class ArrayTools{
         return maximum;
     }
     
+//finds the sum of the values entered
+
     int Find_sum(){
         int sum = 0;
         for(int i=0; i < 10; i++){
@@ -57,7 +65,9 @@ class ArrayTools{
             }
         }
     }
-    
+
+// tells you if each number is in order from small to large
+
     int Is_sorted(){
         
         for (int i = 0; i < 9; i++){
