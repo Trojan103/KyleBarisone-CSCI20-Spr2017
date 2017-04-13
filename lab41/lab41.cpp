@@ -1,3 +1,9 @@
+/* Kyle Barisone
+4/13/2017
+This program uses an array and a class in order to input 10 numbers and store them. It finds the minimum of the numbers entered as well as the max and the sum. It will also tell
+you if the numbers are sorted in order and uses a print function to print it all out.
+*/
+
 #include <iostream>
 using namespace std;
 
@@ -5,54 +11,84 @@ class ArrayTools{
     
     public:
     
-    ArrayTools(){
+    ArrayTools(int array[]){
+       for (int i = 0; i < 10; i++){
+           myArray_[i] = array[i];
+       }
+    }
+    
+    int Find_min(int num1, int num2){
+      int minimum = myArray_[num1];
+      for(int i = num1; i < num2; i++){
+          
+          if(myArray_[i] < minimum){
+              minimum = myArray_[i];
+              
+            }
+        }
+        return minimum;
+    }
+    
+    int Find_max(int num1, int num2){
+        int maximum = myArray_[num1];
+      for(int i = num1; i < num2; i++){
+          
+          if(myArray_[i] > maximum){
+              maximum = myArray_[i];
+              
+            }   
+        }
+        return maximum;
+    }
+    
+    int Find_sum(){
+        int sum = 0;
+        for(int i=0; i < 10; i++){
+        sum = sum + myArray_[i];
+            
+        }
+        return sum;
+    }
+    
+    int Search(int numSearch) {
+        for (int i = 0; i < 10; i ++){
+            if(myArray_[i] == numSearch){
+                return numSearch;
+            }
+        }
+    }
+    
+    int Is_sorted(){
         
-    }
-    void setFind_min(int min){
-        min = 0;
-        return;
+        for (int i = 0; i < 9; i++){
+            
+          if (myArray_[i] > myArray_[i + 1])  {
+              cout << "no" << endl;
+          }
+          
+          else {
+              cout << "Yes" << endl;
+          }
+        }
     }
     
-    void setFind_max(int max){
-        max = 10;
-        return;
+    void Print(){
         
-    }
-    
-    void setFind_sum(int sum){
-        sum = 0;
-        return;
-    }
-    
-    void setSearch(int search){
-        search = 0;
-        return;
-    }
-    
-    void setIs_sorted(int sorted){
-        sorted = 0;
-        return;
-    }
-    
-    int getFind_min(){
+    for (int i = 0; i < 10; i++) { 
+        cout << myArray_[i];
         
+        if (i != 9) {       
+            cout << ", ";
+        }
     }
     
-    int getFind_max(){
-        
-    }
+cout << endl;
+}
     
-    int getFind_sum(){
+    private:
+    int myArray_[];
         
-    }
     
-    int getSearch(){
-        
-    }
-    
-    int getIs_sorted(){
-        
-    }
 };
 
 int main()
@@ -61,6 +97,7 @@ int main()
     int myArray[SIZE];
     
     for(int i = 0; i<SIZE;i++){
+        cout << "enter 10 numbers and press the enter key after each one" << endl;
         cin >> myArray[i];
     }
     ArrayTools a(myArray);
