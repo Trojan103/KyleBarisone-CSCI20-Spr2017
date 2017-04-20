@@ -189,7 +189,7 @@ int main() {
         }
         else if (itemNum == 2) {
             cart[i].setPrice(price[1]);
-            cart[i].setInventory(NUMLEFT[1];)
+            cart[i].setInventory(NUMLEFT[1]);
         }
         else if (itemNum == 3) {
             cart[i].setPrice(price[2]);
