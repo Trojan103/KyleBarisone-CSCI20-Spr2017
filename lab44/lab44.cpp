@@ -14,11 +14,8 @@ int main() {
 
  char lastName[20];
  char firstName[10];
- char name1[20];
- char name2[20];
- char name3[20];
  int favNumber;
- string nickName;
+ char nickName[20];
  
  cout << "This program will generate you 3 user names!" << endl;
  cout << "Please enter your first name. : ";
@@ -66,7 +63,13 @@ cout << "Please enter your favorite number: ";
 cin >> favNumber;
 
 cout << "Do you have any nicknames?: ";
-cin >> nickName; 
+cin >> nickName;
+
+while(strlen(nickName) > 20){
+     cout << "That nickname is too long please try again";
+     cin >> nickName;
+ }
+ 
 cout << endl;
 
 // outputs the user names
