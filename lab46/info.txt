@@ -5,7 +5,6 @@ Suzy Cue
 3 A
 3 B
 24 3.5
-
 Joe Joseph
 1
 4 D
@@ -13,7 +12,6 @@ Joe Joseph
 3 B
 3 C
 0 0.0
-
 Jillian Smith
 5
 4 C
