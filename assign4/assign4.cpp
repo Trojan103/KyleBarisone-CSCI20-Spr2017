@@ -27,8 +27,9 @@ class finalGrade {
         
         if (answerkey[i] == studentAnswers[j]) 
                 score = score + 1.0; 
-        
-        else if (answerkey[i] != studentAnswers[j]) { // if statement for incorrect answer
+                
+        // if statement for incorrect answers
+        else if (answerkey[i] != studentAnswers[j]) { 
         
             // If student omits a question 1 point is taken off
             
@@ -151,16 +152,16 @@ int main() {
     grade.answerChecker(answerkey, incorrect, studentAnswers,  i, j, k, score);
     
     fout << endl;
-    fout << "Student Name: " << studentAnswers[0] << " " << studentAnswers[1] << endl; // studentAnswer.txt contains student's name, so the sentence output the name to text file.
+    fout << "Student Name: " << studentAnswers[0] << " " << studentAnswers[1] << endl; 
     fout << endl;
     
     // for loop for showing question number of which answers were incorrect
     for (i = 0; i < grade.GetnumWrong(); i++) {
-        fout << "You got #" << incorrect[i] + 1 << "." << " incorrect. (-1.25)" << endl; // element of single array starts form 0, so I add 1 for output.
+        fout << "You got #" << incorrect[i] + 1 << "." << " incorrect. (-1.25)" << endl; 
     }
         //Tells the user their total score
         fout << endl;
-        fout << "Total Score: " << grade.GetScore() << endl; // output total score to text file
+        fout << "Total Score: " << grade.GetScore() << endl; 
         fout << endl;
     
     //closes out of the program
