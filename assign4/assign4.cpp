@@ -20,11 +20,11 @@ class finalGrade {
             
         // This program takes in the first and last name of a user before it starts comparing grades from the two files so it does not impact final score
         
-           for (i = 0; i < 21; i++) {
+         for (i = 0; i < 21; i++) {
                 j = i + 2; 
         
         //if statement that adds 1 to score if the student is correct
-        
+    
         if (answerkey[i] == studentAnswers[j]) 
                 score = score + 1.0; 
                 
@@ -33,7 +33,7 @@ class finalGrade {
         
             // If student omits a question 1 point is taken off
             
-            if (studentAnswers[j] == " ") { 
+            if (studentAnswers[j] == "\?") { 
                 score = score - 1;
                 incorrect[k] = i; 
                 k++;
@@ -90,13 +90,15 @@ int main() {
     //intitializing variables and arrays.
     string answerkey[21]; 
     string studentAnswers[23];
-    string incorrect1[21];
-    double score = 0.0; 
+    int incorrect1[21];
+    double score = 0; 
     int incorrect[21];
+    int student = 6;
     
     //variables for arrays 
     int i = 0; 
     int j = 0; 
+    int l = 0;
     int k = 0; 
     
     //initializes class
@@ -137,7 +139,10 @@ int main() {
     
     cout << endl;
     
-    //reads answer key data
+    
+    for (l = 0; l < student; l++){
+        
+    //reads answer key data    
     for (i = 0; i < 18; i++) {
         fin >> answerkey[i];
     }
@@ -161,9 +166,9 @@ int main() {
     }
         //Tells the user their total score
         fout << endl;
-        fout << "Total Score: " << grade.GetScore() << endl; 
+        fout << "Total Score out of 21: " << grade.GetScore() << endl; 
         fout << endl;
-    
+    }
     //closes out of the program
     cout << endl;
     cout << "Logging out." << endl;
