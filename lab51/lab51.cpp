@@ -1,3 +1,6 @@
+/* This program uses pointers in order to check if a user entered word is a palindrom, meaning it is spelled the same front and back. The program works only for 10 letter words or less
+it uses two pointers called heads and tails which keep track of how the word is spelled frontwards and backwards respectively.*/
+
 #include <iostream> 
 #include <iostream> 
 #include <cstring> 
