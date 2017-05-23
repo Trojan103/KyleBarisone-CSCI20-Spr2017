@@ -130,9 +130,10 @@ int main() {
     
     //opens file to tell student their final grade
     fout.open("grade.txt");
+    
     if (!fout.is_open()) {
       cout << endl;
-      cout << "Missing file: 'studentResult.txt...'" << endl;
+      cout << "Missing file: 'solution.txt'" << endl;
       return 1;
     }
     
